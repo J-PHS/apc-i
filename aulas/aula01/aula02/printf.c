@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <locale.h> //biblioteca de idiomas
+// ALT + SHIFT + F  - Identa o código, organiza ele. 
 int main (){
     setlocale(LC_ALL,""); // usa o idioma portugues
     printf("-----------------\n\n");
