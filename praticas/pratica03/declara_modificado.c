@@ -7,7 +7,7 @@ setlocale(LC_ALL,"");
     const short int HORA_EM_SEGUNDOS = 3600;
     long double precisao_extrema = 3.14159265358979323846L;
 
-    printf("Precisão Extrema: %.20Lf\n", precisao_extrema);
+    printf("Precisão Extrema: %.20lf\n", precisao_extrema);
     printf("1 hora corresponde a %i segundos.\n", HORA_EM_SEGUNDOS);
     printf("Populacao Mundial: %li\n", populacao_mundial);
 

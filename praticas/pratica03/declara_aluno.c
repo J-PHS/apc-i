@@ -5,8 +5,8 @@ int main (){
     setlocale(LC_ALL,"");
     int MATRICULA = 0;
     int idade = 99;
-    float altura = 9.90;
-    float peso = 999.0;
+    float altura = 9.90f;
+    float peso = 999.0f;
     char sexo = 'F';
 
     printf("Matricula: %08i\n", MATRICULA);
