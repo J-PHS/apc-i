@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
+#include <math.h> //Biblioteca de matematica
 
 int main(){
     setlocale(LC_ALL,"");
@@ -55,6 +56,66 @@ int main(){
     printf("O numero %i é igual a %i? %i\n",numero1,numero2,igual);
     printf("O numero %i é diferente de %i? %i\n",numero1,numero2,diferente);
 
+    // Operadores lógicos
+    float media = 4.0f;
+    float falta = 0.25f;
+    int operador_E = media >=5.0f && falta <= 0.25f;
+
+    printf("Passei? (E) %i\n", operador_E);
+
+    int operador_OU = media >=5.0f || falta <= 0.25f;
+
+    printf("passei? (OU) %i\n", operador_OU);
+
+    int operador_NAO = !(media >= 5.0f);
+
+    printf("Passei (Nao)? %i\n", operador_NAO);
+
+    /*
+    0 < numero < 10  Na matematica
+    0 < numero && numero < 10  Na programação
+    Falso E qualquer coisa é falso
+    Verdadeiro OU Qualquer coisa é verdadeiro
+    
+    
+    Funções da Matemática
+    Raiz quadrada, Logaritmo, Exponencial, Potencia
+    Tangente, Seno, Coseno
+
+    #include <math.h> Biblioteca de matematica
+ 
+    */
+   const double PI = 3.1415;
+   double raiz_quadrada_de_2 = sqrt(2);
+   double potencia_de_3 = pow(2, 3);
+   double logaritmo_base10 = log10(2);
+   double exponencial = exp(2);
+   double coseno_90 = cos(90 * (PI / 180)); // converter para radiano
+
+   printf("A raiz quadrada de 2 é %.2f\n", raiz_quadrada_de_2);
+   printf("A potencia de 2 elevado a 3 = %.0f\n", potencia_de_3);
+   printf("O logaritmo de 2 na base 10 = %.2f\n", logaritmo_base10);
+   printf("A exponencial de 2 = %.2f\n", exponencial);
+   printf("O cosseno de 90 = %.2f\n", coseno_90);
+
+   /*
+   Precedencia
+    0. ()
+    1.  *  /  % 
+    2.  + -
+   */
+  int expressao1 = 2 - 5 / 3 * 4 + 1;
+  // 5 / 3 = 1, 2-1*4+1
+  // 1 * 4 = 4, 2-4+1
+  // 2 - 4 = -2, -2+1
+  // -2+1 = -1
+  printf("O resultado da expressão 1 é = %i\n",expressao1);
+  int expressao2 = 2 - 5 / (3 * 4) + 1;
+  printf("O resultado da expressão 2 é = %i\n",expressao2);
+  // (3*4) = 12, 2 - 5 / 12 + 1
+  // 5 / 12 = 0, 2 - 0 + 1
+  // 2 - 0 = 2, 2+1
+  // 2+ 1 = 3
     return 0;
 
 }
