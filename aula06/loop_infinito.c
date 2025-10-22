@@ -10,6 +10,8 @@ int main (){
 */
     for (;;){
         printf("Ao infinito e alem!\n");
+
+        //break; --> Interrompe o laço
     }
     return 0;
 }
