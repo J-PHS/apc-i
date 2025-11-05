@@ -6,12 +6,15 @@ int main(){
     setlocale(LC_ALL,"");
     int numero1 = 10;
     int numero2 = 20;
+    float numero3 = 20;
     
     //operadores aritmeticos
     int soma = numero1 + numero2;
     int subtracao = numero1 - numero2;
     int multiplicacao = numero1 * numero2;
+    
     float divisao = numero1 / (numero2 *1.0);
+    float divisaoteste = numero1 / numero3;
     //Devolve Resto
     int resto_da_divisao = numero1 % numero2;
 
@@ -20,6 +23,7 @@ int main(){
     printf("A subtração de %i com %i é %i\n",numero1,numero2,subtracao);   
     printf("A multiplicação de %i com %i é %i\n",numero1,numero2,multiplicacao);
     printf("A divisão de %i com %i é %.1f\n",numero1,numero2,divisao);
+    printf("-------------A divisão TESTE de %i com %.1f é %.1f\n",numero1,numero3,divisaoteste);
     printf("A divisão de %i com %i é %i\n",numero1,numero2,resto_da_divisao);
 
     //Operadores Incremento e decremento
