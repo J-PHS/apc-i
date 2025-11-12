@@ -25,6 +25,7 @@ int main()
         case 1:
         {
             int game_on = 0;
+            int chave = 0;
             while (game_on != 1)
             {
                 int room1 = 0;
@@ -38,13 +39,14 @@ int main()
                 scanf("%i", &room1);
                 system("clear");
                 while (getchar() != '\n'); // limpar buffer
+                
                 switch (room1)
                 {
-                    int chave = 0;
+                  //  int chave = 0;
                 case 1:
                 {
                     printf("Você adquiriu uma chave.\n");
-                    int chave = 1;
+                    chave = 1;
                     break;
                 }
                 case 2:
@@ -58,7 +60,7 @@ int main()
                     break;
                 case 5:
                 {
-                    if (chave = 1)
+                    if (chave == 1)
                     {
                         printf("Você abre a porta.\n");break;
                     }
