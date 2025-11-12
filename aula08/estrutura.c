@@ -51,7 +51,29 @@ int main(){
     struct contato_t contatos[10]; //vetor com 10 contatos
 
     for(int i = 0; i < 10; i++){
-        contatos[i] = meu_contato;
+        //contatos[i] = meu_contato;
+        printf("\nEntre com os dados do %io contato\n", i+1);
+        printf("Nome: ");
+        fgets(contatos[i].nome, sizeof(contatos[i].nome),stdin);
+        printf("Telefone: ");
+        scanf("%li", &contatos[i].telefone);
+        while (getchar() != '\n')
+        printf("Endereço\n ");
+        printf("Logradouro: ");
+        fgets(contatos[i].endereco.nome_logradouro,sizeof(contatos[i].endereco.nome_logradouro), stdin);
+        
+        printf(" Numero: ");
+        scanf("%i", &contatos[i].endereco.numero);
+        while (getchar() != '\n');
+        
+        printf(" Bairro: ");
+        fgets(contatos[i].endereco.bairro,sizeof(contatos[i].endereco.bairro),stdin);
+       
+        printf(" Localidade: ");
+        fgets(contatos[i].endereco.localidade,sizeof(contatos[i].endereco.localidade), stdin);
+       
+        printf(" UF: ");
+        fgets(contatos[i].endereco.uf,sizeof(contatos[i].endereco.uf),stdin);
     }
     strcpy(contatos[0].nome, "Maria");
     printf("\n\nMeus contatos: \n");
